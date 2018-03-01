@@ -13,3 +13,4 @@ model = mist(x_target,y_target,x_source,y_source)
 yhat = model.predict(x_test)
 ```
 
+Note: Scripts were tested in Matlab R2015b.
