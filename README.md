@@ -1,4 +1,4 @@
-# MIST
+# MIST - Metaheuristic Instance Selection for Transfer
 
 MIST is an instance selection algorithm, that aims to select the optimal subset of source instances that, when concatenated with target 
 data, leads to the best predictive performance. The algorithm uses UMDA for instance selection, a linear rescaling of source data to maximize source-target similarity, and FITRGP as the base model.
