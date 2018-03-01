@@ -3,10 +3,17 @@ clc
 
 n_train = 20;
 n_test = 100;
+n_source = 200;
 d = 8;
 
 %% Generate Data
-[xtest,ytest,xtrain,ytrain,xsource,ysource] = gen_data(n_train,n_test,d);
+xtest = lhsdesign(n_test,d);
+xtrain = lhsdesign(n_train,d);
+xsource = lhsdesign(n_source,d);
+
+ytest = mean(dtlz1b(xtest,[30,3]),2);
+ytrain= mean(dtlz1b(xtrain,[30,3]),2);
+ysource = mean(dtlz1b(xsource,[0,0]),2);
 
 %% Building MIST model
 MIST_model = mist(xtrain,ytrain,xsource,ysource);
