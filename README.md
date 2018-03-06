@@ -16,4 +16,5 @@ yhat = model.predict(x_test)
 Note: Scripts were tested in Matlab R2015b.
 
 Described in detail in:
-Min, Alan Tan Wei, et al. "Knowledge transfer through machine learning in aircraft design." IEEE Computational Intelligence Magazine 12.4 (2017): 48-60.
+
+Tan, A., Sagarna, R., Gupta, A., Ong, Y. S., & Goh, C. K. (2017). Knowledge transfer through machine learning in aircraft design. IEEE Computational Intelligence Magazine, 12(4), 48-60.
